@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Youth Behavioral Health</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        a{
+            letter-spacing: 1.8px;
+            font-size: 1.3em;
+            color: black;
+        }
+        li{
+            font-size: 14px;
+        }
+
+        
+        .disorders {
+            font-size: 1.4em;
+            color: #2e76b6;
+            list-style-type: square;
+        }
+        .meetHeader{
+            color: white !important;
+            text-align: left;
+        }
+
+            .disorders li {
+                padding: .5em;
+            }
+        .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover{
+            background: none;
+             color: #2e76b6;
+        }
+        .tab h1 {
+            position: absolute;
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
+            text-align: center;
+            border-top-left-radius: 60%;
+            border-bottom-left-radius: 30%;
+            z-index: 1;
+            background-color: #4ebb92;
+            margin-top: -5%; 
+            padding-top: 5%;
+        }
+
+        .tab:nth-of-type(2n+1) h1{
+            border-top-left-radius: 0%;
+            border-top-right-radius: 60%;
+            border-bottom-left-radius: 0%;
+            
+            background-color: white;
+            color: #4ebb92;
+        }
+
+        .meet{
+            text-align: left; 
+        }
+        .social_media{
+            background-color: none;
+            border-color: none;
+            color: white;
+        }
+
+        .social{
+            padding: 2%;
+        }
+        .social div{
+            font-size: 1.3em;
+        }
+        .social p{
+            font-family: 'Raleway', sans-serif;
+            
+        }
+
+        .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus{
+            background: none; 
+            color: black;
+        }
+
+        .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover{
+            background: none;
+            color:  #2e76b6;
+        }
+        .navbar-inverse .navbar-nav > li > a{
+            color: black;
+            font-family: 'Raleway', sans-serif;
+            
+        }
+
+        .navbar-inverse .navbar-toggle .icon-bar {
+          background-color: white;
+        }
+
+        .toggle  {
+          background-color:  #4ebb92;
+          border: none;
+          float: left; 
+          margin-left: 10%;
+        }
+        .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+            background-color: #4ebb92;
+        }
+        
+        .navbar-toggle:hover,.navbar-toggle:focus {
+              background-color: #4ebb92;
+            }
+        }
+        .navbar-toggle .icon-bar {
+            background-color: none;
+        }
+        #pic_header{
+            margin-left: 10%; 
+            padding-top: 1%; 
+            padding-bottom: 15%; 
+            margin-right: 15%;
+        }
+
+        section{
+            background-color: #4ebb92; 
+            padding-top:12%; 
+            padding-left: 15%; 
+            padding-right: 15%; 
+            padding-bottom: 15%; 
+            color: white; 
+            font-family: 'Kristen ITC'; 
+            font-size: 1.4em;
+        }
+
+        .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+            border: none;
+        }
+
+        section li{
+            font-size: .715em;
+        }
+
+        h1{
+            text-align: center; 
+            padding-bottom: 2%;
+            color: white; 
+            font-family: 'Kristen ITC';
+            font-size: 3em;
+        }
+
+       
+        @media screen and (max-width: 900px){
+            #pic_header{
+                padding-top: 0%;
+                margin-top: 0%;  
+            }
+
+            section {
+                padding-top: 15%;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            
+
+
+            h1{
+                font-size: 2em;
+            }
+
+
+            .disorders {
+                color: #2e76b6;
+                text-align: left;
+                list-style-type: square;
+
+            }
+
+            .disorders li {
+                padding: .3em;
+            }
+            .meet, .meetHeader{
+                text-align:center;
+            }
+
+            
+        }
+         @media screen and (max-width: 767px) {
+             .navbar-inverse .navbar-nav > li > a{
+                color: black;
+                font-family: 'Raleway', sans-serif;
+                margin-left: 10%;
+                background-color: #282b34;
+                color: white;
+                padding-top: -4%;
+                border-color: white;
+                border-style: solid;
+                border-width: .1px;
+                width: 50%;
+                text-align:center;
+            
+            }
+             #myNavbar{
+                 margin-top: 0%;
+             }
+             .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus{
+                background-color: #282b34;
+                color: white;
+
+            }
+             .navbar-inverse .navbar-nav > .active > a:hover{
+                background-color: #4ebb92;
+                color: white;
+            }
+
+            .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover{
+                background-color: #4ebb92;
+                color:  white;
+            }
+            .navbar-inverse .navbar-nav > li > a{
+                color: white;
+                font-family: 'Raleway', sans-serif;
+            
+            }
+             .navbar-inverse .navbar-nav > li:hover{
+                color: white;
+                font-family: 'Raleway', sans-serif;
+            
+            }
+   
+
+        }
+        @media screen and (max-width: 400px){
+          .navbar-inverse .navbar-nav > li > a{
+                color: black;
+                font-family: 'Raleway', sans-serif;
+                margin-left: 10%;
+                background-color: #282b34;
+                color: white;
+                padding-top: -4%;
+                border-color: white;
+                border-style: solid;
+                border-width: .1px;
+                width: 80%;
+                text-align:center;
+            
+            }
+            #pic_header{
+                padding-top: 0%;
+                margin-top: -5%;
+               
+            }
+
+            section{
+                padding-top: 15%;
+                padding-left: 10%;
+                padding-right: 10%;
+                font-size: 1.1em;
+            }
+
+            h1{             
+                font-size: 1.4em;
+            }
+
+            .disorders {
+                color: #2e76b6;
+                text-align: left;
+                list-style-type: square;
+                
+                
+            }
+            .disorders li {
+                padding: 0em;
+            }
+            .meet, .meetHeader{
+                text-align:center;
+            }
+
+
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse" style="background-color: white; border-style: none; padding-top: 7%; padding-right:7%">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" >
+                    <li class="active"><a href="#overview">Home</a></li>
+                    <li>
+                        <a href="#meet">Dr. Hord</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <h3 id="pic_header"><img style="height: auto; max-width: 100%; " src="youth_behavioral_health.png" /></h3>
+    </div>
+
+    <div class="tab">
+        <h1 id="overview">About YBH</h1>
+        <section>
+            <p style="text-align: center; color: white;  font-family: 'Raleway', sans-serif;"> Youth Behavioral Health, LLC provides evaluation and therapeutic services for children, adolescents, and young adults who are struggling with internalizing disorders, such as anxiety and depression, as well as externalizing disorders such as behavioral challenges and AttentionDeficit/Hyperactivity Disorder.<p>
+            <p style="text-align: center; color: white;  font-family: 'Raleway', sans-serif;"> Specialized services are provided to address disordered eating problems such as Anorexia Nervosa and Bulimia and medical concerns (e.g., pain, headaches, chronic illness, insomnia, adherence issues). After a thorough evaluation, evidence-based treatment will be discussed with each patient to collaboratively tailor the treatment plan to address the areas of greatest concern. </p>
+        </section>
+    </div>
+
+    <div class="tab" >
+            <h1 id="services" >Services</h1>
+            <section style="background-color: white; padding-top: 8%; color: #4ebb92;">
+                
+                <div class="row" style="font-family: 'Raleway', sans-serif">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <h2 style="font-family: 'Kristen ITC' ">Therapy is offered for a wide range of concerns, such as: </h2>
+                        <hr style="color: #4EBB92" />
+                        <ol class="disorders">
+                            <li>
+                                <span style="color: black"><p>Anxiety/Phobias</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Attention Deficit/Hyperactivity Disorder</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Trauma/Post Traumatic Stress Disorder</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Depression/Mood</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Adjustment Issues</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Behavioral Problems</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Peer Relationship Conflicts</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Emotion Dysregulation</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Parenting and Family Relationships</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Habit and Tic Disorders of Childhood</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Obsessive Compulsive Disorder</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Oppositional and Conduct Disorders</span>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                        <h2 style="font-family: 'Kristen ITC'">Evaluations are offered for the following: </h2>
+                        <hr style="color: #4EBB92" />
+                        <ol class="disorders">
+                            <li>
+                                <span style="color: black">Anxiety/Phobias/OCD</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Behavior Disorders</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Depression</span>
+                            </li>
+                            <li>
+                                <span style="color: black">Eating Disorders</span>
+                            </li>
+                        </ol>
+
+                        <div id="myCarousel" class="carousel slide" style="margin-top: 10%" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="youth_behavioral_health_logo.png" alt="Los Angeles">
+                                </div>
+
+                                <div class="item">
+                                    <img src="melissa.jpg" alt="Chicago">
+                                </div>
+
+                                <div class="item">
+                                    <img src="youth_behavioral_health_logo.png" alt="New York">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </section>
+    </div>
+
+    <div class="tab">
+        <h1 id="meet" style="background-color: #282b34; color: white">Meet Dr. Hord</h1>
+        <section style="background-color: #282b34; font-family: 'Raleway', sans-serif; color: #b1b4b9">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
+                        <p class="meet">
+                            Dr. Hord conducts diagnostic evaluations and provides psychological and behavioral treatment for individuals with a broad range of emotional, behavioral, learning, and developmental
+                            challenges. She specializes in coaching parents to utilize behavioral techniques to address behavioral issues and disordered eating concerns. In addition, Dr. Hord has a particular interest in working with individuals with anxiety related disorders, self-regulation challenges, as well as adjusting to and adhering to medical diagnoses. (add the paragraph breaks)
+                            Dr. Hord has received specialized training in and is seeking certification in both Parent-Child Interaction Therapy (PCIT) and Family Based Treatment for Eating Disorders. She is also trained in providing a range of empirically-researched approaches including: Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Dialectical Behavior Therapy (DBT), and Motivational Interviewing.
+                            Dr. Hord earned her Ph.D. at the University of Maine, with a specialization in Developmental Clinical Psychology. 
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+                        <p class="meet">
+                            Dr. Hord earned her Ph.D. at the University of Maine, with a specialization in Developmental Clinical Psychology. She completed her pre-doctoral internship at Indiana University School of Medicine, in Indianapolis, IN, followed by a two-year postdoctoral fellowship at the Mayo Clinic in Rochester, MN.
+
+                        </p>
+                        <div style="max-width: 100%; max-height: 100%; padding-left: 5%; padding-top: 7%; text-align: left">
+                            <img style="max-height: 100%; max-width: 90%" src="melissa.jpg" />
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <div class="tab">
+        <h1 id="contact" style="background-color: #4ebb92; color: white">Contact</h1>
+        <section style="background-color: #4ebb92; padding-bottom: 10%; text-align: center; color: white; font-family: 'Kristen ITC' ">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 social">
+                    <div>
+                        <p class="social_media">
+                            <span class="glyphicon glyphicon-home"></span> Mailing Address
+                        </p>
+                    </div> 
+                    <p>
+                        The Lexington Building, Suite 102
+                        1027 7th Street NW
+                        Rochester, MN 55901 
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 social">
+                    <div>
+                        <p class="social_media">
+                            <span class="glyphicon glyphicon-user"></span> Social
+                        </p>
+                    </div> 
+                    <p>
+                        @untitled-corp
+                        <a href="www.linkedin.com/in/melissa-hord-YBH"></a>linkedin.com/in/melissa-hord-YBH 
+                        facebook.com/untitled
+                        Email
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 social">
+                    
+                    <div>
+                        <p class="social_media">
+                            <span class="glyphicon glyphicon-envelope"></span> Email
+                        </p>
+                    </div> 
+                    <p>
+                        drhord@youthbehavioralhealth.org 
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 social">
+                    
+                    <div>
+                        <p  class="social_media">
+                            <span class="glyphicon glyphicon-earphone"></span> Phone
+                        </p>
+                    </div> 
+                    <p>
+                        (507) 206-3370 
+                    </p>
+                    <p>Fax: (507) 208-4016 </p>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <section style="background-color: #282b34; text-align: center; color: white; padding-top: 5%; padding-bottom: 5%; ">
+        <div>&copy; Youth Behavioral Health, LLC
+        </div>
+    </section>
+ 
+
+
+</body>
+</html>
